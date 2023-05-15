@@ -29,6 +29,11 @@ public class SignLoginPage extends BasePage{
     @FindBy (xpath ="//p[text()='Your email or password is incorrect!']")
     public WebElement loginErrorText;
 
+    @FindBy(xpath = "//h2[.='New User Signup!']")
+    public WebElement signUpText;
+
+    @FindBy(xpath = "//*[.='Email Address already exist!']")
+    public WebElement signUpErrorText;
 
 
     public void signUp (String name,String email){

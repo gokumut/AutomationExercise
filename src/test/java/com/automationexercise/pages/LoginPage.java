@@ -15,8 +15,6 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "//a[@href='/logout']")
     public WebElement logoutBtn;
 
-
-
     public void verifyLogin(){
         Assert.assertTrue(welcomeText.getText().contains(ConfigurationReader.get("username")));
     }

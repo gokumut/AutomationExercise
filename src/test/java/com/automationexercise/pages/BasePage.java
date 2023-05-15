@@ -19,6 +19,9 @@ public abstract class BasePage {
 
    @FindBy(xpath = "//a[text()=' Signup / Login']")
     public WebElement loginBtn;
+
+    @FindBy(xpath = "//a[@href='/contact_us']")
+    public WebElement contactUsBtn;
 }
 
 

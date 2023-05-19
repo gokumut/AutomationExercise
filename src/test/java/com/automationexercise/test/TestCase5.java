@@ -8,10 +8,8 @@ import org.testng.annotations.Test;
 
 
 public class TestCase5 extends TestBase {
-
     @Test
     public void testcase5() {
-
         HomePage homePage = new HomePage();
         SignLoginPage signLoginPage = new SignLoginPage();
         LoginPage loginPage = new LoginPage();
@@ -27,9 +25,5 @@ public class TestCase5 extends TestBase {
         signLoginPage.signUp("marquis","marquis1@gmail.com");
         extentLogger.info(" Verify error 'Email Address already exist!' is visible");
         BrowserUtils.verifyElementDisplayed(signLoginPage.signUpErrorText);
-
-
-
-
     }
 }

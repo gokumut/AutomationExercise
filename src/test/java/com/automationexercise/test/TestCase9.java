@@ -7,14 +7,13 @@ import com.automationexercise.utilities.BrowserUtils;
 import org.testng.annotations.Test;
 
 public class TestCase9 extends TestBase {
-
     @Test
     public void testbase9() {
         HomePage homePage = new HomePage();
         ProductsPage productsPage = new ProductsPage();
-        SearchedProductPage searchedProductPage=new SearchedProductPage();
+        SearchedProductPage searchedProductPage = new SearchedProductPage();
 
-        extentLogger = report.createTest("Product Test");
+        extentLogger = report.createTest("Search Product Test");
         extentLogger.info("Verify that home page is visible succesfully");
         BrowserUtils.verifyElementDisplayed(homePage.homePageBtn);
         extentLogger.info("Click on 'Products' button");
@@ -31,8 +30,5 @@ public class TestCase9 extends TestBase {
         BrowserUtils.verifyElementDisplayed(searchedProductPage.searchedProductText);
         extentLogger.info("Verify all the products related to search are visible");
         searchedProductPage.showSearchedProductList();
-
-
     }
-
 }

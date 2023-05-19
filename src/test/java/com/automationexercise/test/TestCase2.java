@@ -10,7 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class TestCase2 extends TestBase {
-
     @Test
     public void testcase2(){
         HomePage homePage=new HomePage();
@@ -21,7 +20,5 @@ public class TestCase2 extends TestBase {
         BrowserUtils.waitFor(2);
         loginPage.verifyLogin();
        //loginPage.deleteAccount();
-
-
     }
 }

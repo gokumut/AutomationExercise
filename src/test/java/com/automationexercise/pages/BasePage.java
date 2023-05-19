@@ -13,20 +13,16 @@ public abstract class BasePage {
     public BasePage() {
         PageFactory.initElements(Driver.get(), this);
     }
-
     @FindBy (xpath = "//a[text()=' Home']")
     public WebElement homePageBtn;
-
-   @FindBy(xpath = "//a[text()=' Signup / Login']")
+    @FindBy(xpath = "//a[text()=' Signup / Login']")
     public WebElement loginBtn;
-
-    @FindBy(xpath = "//a[@href='/contact_us']")
+   @FindBy(xpath = "//a[@href='/contact_us']")
     public WebElement contactUsBtn;
-
     @FindBy(xpath = "//a[text()=' Products']")
     public WebElement productBtn;
-
-
+    @FindBy(xpath = " //a[text()=' Test Cases']")
+    public WebElement testCaseBtn;
 }
 
 

@@ -10,7 +10,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestCase1 extends TestBase{
-
     @Test
     public void testcase1(){
         HomePage homePage=new HomePage();
@@ -27,6 +26,5 @@ public class TestCase1 extends TestBase{
         accountInformationPage.newsletterBtn.click();
         accountInformationPage.setAdresseInformation();
         BrowserUtils.verifyElementDisplayed(By.xpath("(//*[.='Account Created!'])[2]"));
-
     }
 }

@@ -14,15 +14,12 @@ public class ContactPage extends BasePage{
     public WebElement inputSubject;
     @FindBy(xpath = "//textarea[@id='message']")
     public WebElement textArea;
-
     @FindBy(xpath = "//input[@type='file']")
     public WebElement fileUploadBtn;
     @FindBy(xpath = "//input[@type='submit']")
     public WebElement submitBtn;
-
     @FindBy(xpath = "//*[.='Success! Your details have been submitted successfully.']")
     public WebElement contactSuccesText;
-
     @FindBy(xpath = "(//*[.=' Home'])[3]")
     public WebElement homeBtn;
 

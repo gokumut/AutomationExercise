@@ -2,7 +2,6 @@ package com.automationexercise.test;
 
 import com.automationexercise.pages.HomePage;
 import com.automationexercise.pages.ProductsPage;
-import com.automationexercise.pages.SignLoginPage;
 import com.automationexercise.utilities.BrowserUtils;
 import org.testng.annotations.Test;
 

@@ -4,7 +4,6 @@ import com.automationexercise.pages.HomePage;
 import com.automationexercise.pages.LoginPage;
 import com.automationexercise.pages.SignLoginPage;
 import com.automationexercise.utilities.BrowserUtils;
-import com.google.common.base.Verify;
 import org.testng.annotations.Test;
 
 public class TestCase4 extends TestBase{

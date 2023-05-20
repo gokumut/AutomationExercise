@@ -6,7 +6,6 @@ import com.automationexercise.pages.LoginPage;
 import com.automationexercise.pages.SignLoginPage;
 
 import com.automationexercise.utilities.BrowserUtils;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class TestCase2 extends TestBase {
